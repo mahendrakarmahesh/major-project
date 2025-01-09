@@ -70,10 +70,10 @@ def inference_on_video(args):
         detections = detector.detect(frame)
         detector.draw_detections(frame, detections=detections)
         writer.write(frame)
-        cv2.imshow("Result", frame)
-        key = cv2.waitKey(1) & 0xFF
-        if key == ord("q"):
-            break
+        # cv2.imshow("Result", frame)
+        # key = cv2.waitKey(1) & 0xFF
+        # if key == ord("q"):
+        #     break
     print("[INFO] Finish. Saving result to output/output.mp4")
 
 
